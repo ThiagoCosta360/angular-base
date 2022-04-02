@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { GuestGuard } from './resources/guards/guest.guard';
-import { LoggedGuard } from './resources/guards/logged.guard';
+import { GuestGuard } from './core/guards/guest.guard';
+import { LoggedGuard } from './core/guards/logged.guard';
 
 const activateForLoggeds = [LoggedGuard];
 const activateForGuests = [GuestGuard];
