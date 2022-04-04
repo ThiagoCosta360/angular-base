@@ -13,18 +13,14 @@ const routes: Routes = [
 				loadChildren: () =>
 					import('./home/home.module')
 						.then((m)=> m.HomeModule)
-						.catch((err) => {
-							console.error(err);
-						}),
+						.catch((err) => console.error(err)),
 			},
 			{
 				path: 'history',
 				loadChildren: () =>
 					import('./history/history.module')
 						.then((m)=> m.HistoryModule)
-						.catch((err) => {
-							console.error(err);
-						}),
+						.catch((err) => console.error(err)),
 			},
 			{
 				path: '',
