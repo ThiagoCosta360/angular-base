@@ -1,6 +1,10 @@
 {
   "introduction": "hello, my name is {{name}}!",
 	"login": {
-		"title": "login"
+		"title": "login",
+		"confirm-btn": "login"
+	},
+	"header": {
+		"logout-btn": "logout"
 	}
 }

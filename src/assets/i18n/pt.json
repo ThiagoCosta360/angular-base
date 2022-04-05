@@ -3,5 +3,8 @@
 	"login": {
 		"title": "login",
 		"confirm-btn": "login"
+	},
+	"header": {
+		"logout-btn": "sair"
 	}
 }

@@ -26,6 +26,10 @@ export class AuthService {
 		return this.storageService.has('name');
 	}
 
+	public userName(): string {
+		return this.storageService.get('name');
+	}
+
 	public login(name: string): void {
 		this.storageService.set('name', name);
 		this.router.navigate(['']);

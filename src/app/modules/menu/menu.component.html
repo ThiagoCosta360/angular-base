@@ -1,1 +1,15 @@
-<p>menu works!</p>
+<div class="menu">
+	<div class="items">
+		<div class="item" *ngFor="let item of menuItemList; trackBy: trackMenuItemList">
+			<div class="menu-btn" (click)="navigate(item.link)">
+				<img class="icon" [src]="getIconSrc(item.icon)" alt="icon" />
+				<div class="title">
+					{{ item.title }}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<ng-content></ng-content>
+	</div>
+</div>

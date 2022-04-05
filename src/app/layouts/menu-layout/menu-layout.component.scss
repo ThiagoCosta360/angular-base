@@ -1,0 +1,11 @@
+.menu-layout {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	.header {
+		flex-grow: 0;
+	}
+	.menu {
+		flex-grow: 1;
+	}
+}

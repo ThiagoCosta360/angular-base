@@ -1,0 +1,33 @@
+.menu {
+	height: 100%;
+	display: flex;
+	.items {
+		background-color: aquamarine;
+		flex-shrink: 0;
+		width: 13rem;
+		.item {
+			padding: 1rem;
+			border-bottom: 1px solid black;
+			.menu-btn {
+				display: flex;
+				align-items: center;
+				cursor: pointer;
+				.icon {
+					width: 1.5rem;
+					margin-right: 1rem;
+				}
+				.title {
+					font-size: 1.5rem;
+					font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+				}
+				&:hover {
+					color: blueviolet;
+				}
+			}
+		}
+	}
+	.content {
+		padding: 1rem;
+		width: 100%;
+	}
+}

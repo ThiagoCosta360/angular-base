@@ -1,1 +1,11 @@
-<p>header works!</p>
+<div class="container">
+	<app-translation-select></app-translation-select>
+	<div class="user">
+		<div class="user-name">
+			{{ loggedName }}
+		</div>
+		<button (click)="logout()">
+			{{ "header.logout-btn" | translate }}
+		</button>
+	</div>
+</div>

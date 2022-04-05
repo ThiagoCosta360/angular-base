@@ -1,15 +1,34 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
+
+export interface MenuItem {
+	title: string,
+	link: string,
+	icon: string,
+}
+
 
 @Component({
-  selector: 'app-menu',
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss']
+	selector: 'app-menu',
+	templateUrl: './menu.component.html',
+	styleUrls: ['./menu.component.scss'],
 })
-export class MenuComponent implements OnInit {
+export class MenuComponent {
+	@Input() menuItemList!: MenuItem[];
 
-  constructor() { }
+	constructor(
+		private readonly router: Router,
+	) {	}
 
-  ngOnInit(): void {
-  }
+	public navigate(link: string): void {
+		this.router.navigate([link]);
+	}
 
+	public getIconSrc(name: string): string {
+		return `assets/icons/${name}.svg`;
+	}
+
+	public trackMenuItemList(): MenuItem[] {
+		return this.menuItemList ?? undefined;
+	}
 }

@@ -1,2 +1,6 @@
-<p>menu-layout works!</p>
-<ng-content></ng-content>
+<div class="menu-layout">
+	<app-header class="header"></app-header>
+		<app-menu class="menu"  [menuItemList]="menuItemList">
+			<ng-content></ng-content>
+		</app-menu>
+</div>

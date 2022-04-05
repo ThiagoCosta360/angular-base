@@ -4,10 +4,10 @@ import { AuthComponent } from './auth.component';
 import { RegisterComponent } from './register/register.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { LoginComponent } from './login/login.component';
-import { LayoutsModule } from 'src/app/layouts/layouts.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { translateModuleConfig } from 'src/app/modules/translation/translation-module-config';
 import { FormsModule } from '@angular/forms';
+import { CardLayoutModule } from 'src/app/layouts/card-layout/card-layout.module';
 
 @NgModule({
 	declarations: [
@@ -18,7 +18,7 @@ import { FormsModule } from '@angular/forms';
 	],
 	imports: [
 		AuthRoutingModule,
-		LayoutsModule,
+		CardLayoutModule,
 		TranslateModule.forChild(translateModuleConfig),
 		FormsModule,
 	],
