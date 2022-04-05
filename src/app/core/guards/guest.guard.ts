@@ -1,16 +1,20 @@
 import { Injectable } from '@angular/core';
-import { CanActivateChild } from '@angular/router';
+import { CanActivateChild, Router } from '@angular/router';
+import { AuthService } from '../services/auth.service';
 
 
 @Injectable({
 	providedIn: 'root',
 })
 export class GuestGuard implements CanActivateChild {
-	// constructor(
-	// ) {}
+	constructor(
+		private _authService: AuthService,
+		private _router: Router,
+	) {}
 	canActivateChild(): boolean {
-		const validation = true;
+		const validated = !this._authService.isUserLogged();
 
-		return validation;
+		if (!validated) this._router.navigate(['auth']);
+		return validated;
 	}
 }

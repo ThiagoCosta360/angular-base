@@ -1,3 +1,6 @@
 {
-  "introduction": "hello, my name is {{name}}!"
+  "introduction": "hello, my name is {{name}}!",
+	"login": {
+		"title": "login"
+	}
 }

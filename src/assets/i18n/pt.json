@@ -1,3 +1,7 @@
 {
-  "introduction": "oi, meu nome é {{name}}!"
+  "introduction": "oi, meu nome é {{name}}!",
+	"login": {
+		"title": "login",
+		"confirm-btn": "login"
+	}
 }

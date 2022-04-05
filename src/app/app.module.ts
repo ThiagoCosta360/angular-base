@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { DashboardModule } from './pages/dashboard/dashboard.module';
 import { AuthModule } from './pages/auth/auth.module';
 // Translation
-import { translateModuleConfig } from './core/modules/translation/translation-module-config';
+import { translateModuleConfig } from './modules/translation/translation-module-config';
 import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({

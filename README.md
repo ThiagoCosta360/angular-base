@@ -1,6 +1,6 @@
 # Features
 
-[] - Internacionalization
+[x] - Internacionalization
 [] - Multiple Themes
 
 # Angular topics I cover
@@ -24,7 +24,6 @@
 ```
 
 ```- SkipSelf
-
   constructor(@Optional() @SkipSelf() parentModule?: GreetingModule) {
     if (parentModule) {
       throw new Error(
