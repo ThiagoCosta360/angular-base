@@ -1,3 +1,9 @@
+# pages
+[] - dashboard
+[] - camera visualization - SS
+[] - flash cards app
+[] - dbeaver online
+
 # Features
 
 [x] - Internacionalization
@@ -14,23 +20,6 @@
 [] - Resolver
 [] - Interceptor
 [] - Decorators
-
-# Things to learn
-
-```- optional
-  constructor(@Optional() config?: UserServiceConfig) {
-    if (config) { this._userName = config.userName; }
-  }
-```
-
-```- SkipSelf
-  constructor(@Optional() @SkipSelf() parentModule?: GreetingModule) {
-    if (parentModule) {
-      throw new Error(
-        'GreetingModule is already loaded. Import it in the AppModule only');
-    }
-  }
-```
 
 # Want to contribute with the project?
 
