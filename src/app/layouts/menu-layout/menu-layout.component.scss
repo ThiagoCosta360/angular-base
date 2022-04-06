@@ -1,11 +1,15 @@
+:host, .menu-layout{
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+
 .menu-layout {
-	// height: 100vh;
-// 	display: flex;
-// 	flex-direction: column;
-// 	.header {
-// 		flex-grow: 0;
-// 	}
-// 	.menu {
-// 		flex-grow: 1;
-// 	}
+	flex-direction: column;
+	.header {
+		flex-grow: 0;
+	}
+	.menu {
+		flex-grow: 1;
+	}
 }
