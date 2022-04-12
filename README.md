@@ -1,8 +1,12 @@
-# pages
+# ideas
 [] - dashboard
 [] - camera visualization - SS
 [] - flash cards app
 [] - dbeaver online
+[] - blog pessoal?
+[] - todo lists?
+[] - keyboard trainer?
+[] - howtostartup.com
 
 # Features
 

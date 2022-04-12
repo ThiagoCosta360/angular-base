@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { ExtraOptions, PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { GuestGuard } from './core/guards/guest.guard';
 import { LoggedGuard } from './core/guards/logged.guard';
 
@@ -29,8 +29,13 @@ const routes: Routes = [
 	},
 ];
 
+const routerConfig: ExtraOptions = {
+	preloadingStrategy: PreloadAllModules,
+	scrollPositionRestoration: 'enabled',
+};
+
 @NgModule({
-	imports: [RouterModule.forRoot(routes)],
+	imports: [RouterModule.forRoot(routes, routerConfig)],
 	exports: [RouterModule],
 })
 export class AppRoutingModule { }
